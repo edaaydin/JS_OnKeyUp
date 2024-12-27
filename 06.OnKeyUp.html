@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" class="inputClass" placeholder="Bir İsim Yazınız.">
+
+    <script>
+        // inputa yazı yazmak için her tuşa bastığımızda onkeyup calısır.
+
+        // yazılan her karakteri buyuk harfe cevirerek aynı inputta yazınız.
+
+        var input = document.getElementsByClassName("inputClass")[0];
+
+        input.onkeyup = function ()
+        {
+            input.value = input.value.toUpperCase();
+        }
+
+
+    </script>
+
+</body>
+
+</html>
